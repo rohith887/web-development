@@ -1,0 +1,5 @@
+1)git init
+2)git add . // to add multiple files at a time
+3)git commit -m "message"
+4)git remote add origin https://github.com/rohith887/web-development.git
+5)git push -u origin master
