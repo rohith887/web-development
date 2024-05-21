@@ -1,11 +1,43 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alert, Prompt, confirm</title>
 </head>
+<style>
+  .container
+  {
+    font-size:23px;
+    background:color #ee7070;
+    border:2px solid grey;
+    padding:2px;
+    margin:4px;
+    text-align:center;
+  }
+</style>
 <body>
-     
+   <div class = container>
+    Time now is <span id= "time">  </span>
+  </div>
+    <script>
+    /*function greet(msg,msg2)
+    {
+      console.log("hello everyone" + msg + msg2);
+    }
+    let intervalId = setInterval(greet,3000,"welcome","to the course");
+    clearInterval(intervalId);
+   */
+  
+  function displayTime()
+  {
+    let time = new Date();
+    console.log(time);
+    document.getElementById('time').innerHTML=time;
+    
+  }
+  setInterval(displayTime, 1000);
+  </script>
+    
 </body>
 </html>
